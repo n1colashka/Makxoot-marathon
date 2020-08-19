@@ -1,15 +1,464 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Makxoot</title>
+    <title>Makxoot - аренда серверов</title>
+    <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-<h1>Hello</h1>
-<div class="content">
 
-</div>
+<body>
+
+    <!-- header -->
+    <header class="header">
+        <div class="container">
+            <nav class="header__navigation navigation">
+                <a class="header__logo-link logo" href="index.html">
+                    <img src="images/logo.png" alt="Логотип Makxoot" class="header__logo logo__img">
+                </a>
+                <ul class="navigation__list">
+                    <li class="navigation__item"><a href="#" class="navigation__link">Хостинг</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link">CMS Хостинг</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link">Премиум хостинг</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link">VPS Хостинг</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link">Домены</a></li>
+                </ul>
+                <button class="header__btn">Панель</button>
+            </nav>
+            <div class="header__slider header-slider">
+                <div class="header-slider__container swiper-container">
+                    <div class="header-slider__wrapper swiper-wrapper">
+                        <div class="header-slider__item swiper-slide">
+                            <div class="header-slider__info">
+                                <h4 class="header-slider__title">Аренда серверов</h4>
+                                <p class="header-slider__text">
+                                    Премиальные брендовые серверы в аренду
+                                    в сверхнадежном современном дата-центре класса Tier3+
+                                </p>
+                                <a class="header-slider__btn" href="#">Подробнее</a>
+                            </div>
+                            <img class="header-slider__img" src="images/header-slider-1.png" alt="Аренда серверов">
+                        </div>
+                        <div class="header-slider__item swiper-slide">
+                            <div class="header-slider__info">
+                                <h4 class="header-slider__title">Аренда серверов</h4>
+                                <p class="header-slider__text">
+                                    Премиальные брендовые серверы в аренду
+                                    в сверхнадежном современном дата-центре класса Tier3+
+                                </p>
+                                <a class="header-slider__btn" href="#">Подробнее</a>
+                            </div>
+                            <img class="header-slider__img" src="images/header-slider-1.png" alt="Аренда серверов">
+                        </div>
+                        <div class="header-slider__item swiper-slide">
+                            <div class="header-slider__info">
+                                <h4 class="header-slider__title">Аренда серверов</h4>
+                                <p class="header-slider__text">
+                                    Премиальные брендовые серверы в аренду
+                                    в сверхнадежном современном дата-центре класса Tier3+
+                                </p>
+                                <a class="header-slider__btn" href="#">Подробнее</a>
+                            </div>
+                            <img class="header-slider__img" src="images/header-slider-1.png" alt="Аренда серверов">
+                        </div>
+                        <div class="header-slider__item swiper-slide">
+                            <div class="header-slider__info">
+                                <h4 class="header-slider__title">Аренда серверов</h4>
+                                <p class="header-slider__text">
+                                    Премиальные брендовые серверы в аренду
+                                    в сверхнадежном современном дата-центре класса Tier3+
+                                </p>
+                                <a class="header-slider__btn" href="#">Подробнее</a>
+                            </div>
+                            <img class="header-slider__img" src="images/header-slider-1.png" alt="Аренда серверов">
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- /header -->
+
+
+    <!-- section partners -->
+    <section class="partners">
+        <div class="container">
+            <h3 class="partners__title section-title">Макхоот — лидер авторитетных рейтингов</h3>
+            <div class="partners__carousel partners-carousel">
+                <ul class="partners-carousel__list owl-carousel">
+                    <li class="partners-carousel__item">
+                        <a href="#" class="partners-carousel__link">
+                            <img src="images/siterost-ru-logo.png" alt="Логотип siterost-ru"
+                                class="partners-carousel__img">
+                        </a>
+                    </li>
+                    <li class="partners-carousel__item">
+                        <a href="#" class="partners-carousel__link">
+                            <img src="images/hostings-info-logo.png" alt="Логотип hostings-info"
+                                class="partners-carousel__img">
+                        </a>
+                    </li>
+                    <li class="partners-carousel__item">
+                        <a href="#" class="partners-carousel__link">
+                            <img src="images/hosting-cloud-partner-logo.png" alt="Логотип hostings-cloud-partner"
+                                class="partners-carousel__img">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- /section partners -->
+
+    <!-- section plan -->
+    <section class="plan">
+        <div class="container">
+            <h3 class="plan__title section-title">Выберите тариф</h3>
+            <div class="plan__toggler">
+                <button class="plan__toggler-btn plan__toggler-btn--active ">Оплата за год</button>
+                <button class="plan__toggler-btn">Оплата за месяц</button>
+            </div>
+            <div class="plan__items-wrapper plan__items--active">
+                <div class="plan__items">
+                    <div class="plan__box plan-box">
+                        <div class="plan-box__title">Хостинг</div>
+                        <div class="plan-box__name">Мак-3</div>
+                        <div class="plan-box__item">3 ГБ на SSD</div>
+                        <div class="plan-box__item">1 сайт</div>
+                        <div class="plan-box__item">1 база данных</div>
+                        <div class="plan-box__item">Нагрузка 5%</div>
+                        <div class="plan-box__price">113 <span class="plan-box__value">&#8381;</span></div>
+                    </div>
+                    <div class="plan__box plan-box">
+                        <div class="plan-box__title">CMS-Хостинг</div>
+                        <div class="plan-box__name">Мак-10</div>
+                        <div class="plan-box__item">10 ГБ на SSD</div>
+                        <div class="plan-box__item">5 сайтов</div>
+                        <div class="plan-box__item">5 баз данных</div>
+                        <div class="plan-box__item">Нагрузка 12.5%</div>
+                        <div class="plan-box__price">219<span class="plan-box__value">&#8381;</span></div>
+                    </div>
+                    <div class="plan__box plan-box">
+                        <div class="plan-box__title">Премиум Хостинг</div>
+                        <div class="plan-box__name">Мак-15</div>
+                        <div class="plan-box__item">15 ГБ на SSD</div>
+                        <div class="plan-box__item">15 сайтов</div>
+                        <div class="plan-box__item">15 баз данных</div>
+                        <div class="plan-box__item">Нагрузка 25%</div>
+                        <div class="plan-box__price">349<span class="plan-box__value">&#8381;</span></div>
+                    </div>
+                    <div class="plan__box plan-box">
+                        <div class="plan-box__title">VPS Хостинг</div>
+                        <div class="plan-box__name">Мак-30</div>
+                        <div class="plan-box__item">30 ГБ на SSD</div>
+                        <div class="plan-box__item">40 сайтов</div>
+                        <div class="plan-box__item">40 баз данных</div>
+                        <div class="plan-box__item">Нагрузка 50%</div>
+                        <div class="plan-box__price">615<span class="plan-box__value">&#8381;</span></div>
+                    </div>
+                </div>
+            </div c>
+            <div class="plan__items-wrapper">
+                <div class="plan__items">
+                    <div class="plan__box plan-box">
+                        <div class="plan-box__title">Хостинг</div>
+                        <div class="plan-box__name">Мак-1</div>
+                        <div class="plan-box__item">2 ГБ на SSD</div>
+                        <div class="plan-box__item">1 сайт</div>
+                        <div class="plan-box__item">1 база данных</div>
+                        <div class="plan-box__item">Нагрузка 5%</div>
+                        <div class="plan-box__price">101 <span class="plan-box__value">&#8381;</span></div>
+                    </div>
+                    <div class="plan__box plan-box">
+                        <div class="plan-box__title">CMS-Хостинг</div>
+                        <div class="plan-box__name">Мак-8</div>
+                        <div class="plan-box__item">11 ГБ на SSD</div>
+                        <div class="plan-box__item">5 сайтов</div>
+                        <div class="plan-box__item">5 баз данных</div>
+                        <div class="plan-box__item">Нагрузка 12.5%</div>
+                        <div class="plan-box__price">219<span class="plan-box__value">&#8381;</span></div>
+                    </div>
+                    <div class="plan__box plan-box">
+                        <div class="plan-box__title">Премиум Хостинг</div>
+                        <div class="plan-box__name">Мак-12</div>
+                        <div class="plan-box__item">17 ГБ на SSD</div>
+                        <div class="plan-box__item">15 сайтов</div>
+                        <div class="plan-box__item">15 баз данных</div>
+                        <div class="plan-box__item">Нагрузка 25%</div>
+                        <div class="plan-box__price">359<span class="plan-box__value">&#8381;</span></div>
+                    </div>
+                    <div class="plan__box plan-box">
+                        <div class="plan-box__title">VPS Хостинг</div>
+                        <div class="plan-box__name">Мак-30</div>
+                        <div class="plan-box__item">32 ГБ на SSD</div>
+                        <div class="plan-box__item">45 сайтов</div>
+                        <div class="plan-box__item">45 баз данных</div>
+                        <div class="plan-box__item">Нагрузка 60%</div>
+                        <div class="plan-box__price">725<span class="plan-box__value">&#8381;</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /section plan -->
+
+    <!-- section benefits -->
+    <section class="benefits">
+        <div class="container">
+            <h3 class="benefits__title section-title">Наши преимущества</h3>
+            <ul class="benefits__items">
+                <li class="benefits__item">
+                    <img class="benefits__img" src="images/benefits-1.png" alt="Безопасность данных">
+                    <div class="benefits__item-title">Безопасность данных</div>
+                    <p class="benefits__text">
+                        Операцинная система CloudLinux с CageFS отлично защищает данные клиентов макхоота
+                    </p>
+                </li>
+                <li class="benefits__item">
+                    <img class="benefits__img" src="images/benefits-2.png" alt="Премиальное оборудование">
+                    <div class="benefits__item-title">Премиальное оборудование</div>
+                    <p class="benefits__text">
+                        Клиенты макхоота обслуживаются на профессиональном оборудовании фирмы Dell с SSD-дисками
+                    </p>
+                </li>
+                <li class="benefits__item">
+                    <img class="benefits__img" src="images/benefits-3.png" alt="Круглосуточная поддержка">
+                    <div class="benefits__item-title">Круглосуточная поддержка</div>
+                    <p class="benefits__text">
+                        Лучшие специалисты Макхоота доступны в режиме 24/7 для решения любых вопросов
+                    </p>
+                </li>
+                <li class="benefits__item">
+                    <img class="benefits__img" src="images/benefits-4.png" alt="Перенос на наш хостинг">
+                    <div class="benefits__item-title">Перенос на наш хостинг</div>
+                    <p class="benefits__text">
+                        При переходе от другого хостера Макхост бесплатно переносит сайты и дарит месяц пользования в
+                        подарок
+                    </p>
+                </li>
+                <li class="benefits__item">
+                    <img class="benefits__img" src="images/benefits-5.png" alt="Своя хостинг панель">
+                    <div class="benefits__item-title">Своя хостинг панель</div>
+                    <p class="benefits__text">
+                        Мы используем панель собственной разработки для максимального продуманного и удобного управления
+                        сайтами
+                    </p>
+                </li>
+                <li class="benefits__item">
+                    <img class="benefits__img" src="images/benefits-6.png" alt="Акции и бонусы">
+                    <div class="benefits__item-title">Акции и бонусы</div>
+                    <p class="benefits__text">
+                        Все наши пользователи регулярно получают бонусы и участвуют в акциях
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-- /section benefits -->
+
+    <!-- section lead -->
+    <section class="lead">
+        <div class="container">
+            <h3 class="lead__title section-title">Найдите идеальное доменное имя</h3>
+            <form class="lead__form" action="#" name="leadForm">
+                <div class="lead__field">
+                    <input class="lead__input" type="text" name="leadDomainName"
+                        placeholder="Введите нужное доменное имя">
+                    <select class="lead__select" name="leadDomain">
+                        <option value="ru">.ru</option>
+                        <option value="com">.com</option>
+                        <option value="kz">.kz</option>
+                        <option value="net">.net</option>
+                    </select>
+                    <button class="lead__btn">Найти</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <!-- /section lead -->
+
+    <!-- section reviews -->
+    <section class="reviews">
+        <div class="container">
+            <h3 class="reviews__title section-title">Клиенты про нас</h3>
+            <div class="reviews__inner">
+                <div class="reviews__slider-wrapper swiper-container">
+                    <div class="reviews__slider swiper-wrapper">
+                        <div class="reviews__item swiper-slide">
+                            <div class="reviews__head">
+                                <img src="images/slider_img-man.png" class="reviews__img">
+                                <div class="reviews__about">
+                                    <div class="reviews__name">Алексей Кашин</div>
+                                    <div class="reviews__post">YouTube-блогер</div>
+                                </div>
+                                <div class="reviews__rating rating">
+                                    <img class="rating__item" src="images/star.svg" alt="Звездочка">
+                                    <img class="rating__item" src="images/star.svg" alt="Звездочка">
+                                    <img class="rating__item" src="images/star.svg" alt="Звездочка">
+                                    <img class="rating__item" src="images/star.svg" alt="Звездочка">
+                                    <img class="rating__item" src="images/star.svg" alt="Звездочка">
+                                </div>
+                            </div>
+                            <p class="reviews__text">
+                                С Макхоотом работаю около 7 месяцев. Общие впечатления отличные! Сайты летают,
+                                техподдержка
+                                оперативно решает все вопросы. Есть тестовый период целых 93 дня! Это ли не сказка ?!
+                                Особенно
+                                хочу отметить менеджера Ивана Иванова за грамотную помощь в решении вопросов
+                                сотрудничества.
+                                Макхооту спасибо за работу
+                            </p>
+                            <time class="reviews__time" datetime="2019-04-13">13 апр. 2019</time>
+                        </div>
+                        <div class="reviews__item swiper-slide">
+                            <div class="reviews__head">
+                                <img src="images/slider_img-woman.png" class="reviews__img">
+                                <div class="reviews__about">
+                                    <div class="reviews__name">Татьяна Велина</div>
+                                    <div class="reviews__post">SMM-менеджер</div>
+                                </div>
+                                <div class="reviews__rating rating">
+                                    <img class="rating__item" src="images/star.svg" alt="Звездочка">
+                                    <img class="rating__item" src="images/star.svg" alt="Звездочка">
+                                    <img class="rating__item" src="images/star.svg" alt="Звездочка">
+                                    <img class="rating__item" src="images/star.svg" alt="Звездочка">
+                                    <img class="rating__item" src="images/star.svg" alt="Звездочка">
+                                </div>
+                            </div>
+                            <p class="reviews__text">
+                                Это был мой первый опыт, однако я в восторге! Мне, как нубу всё это было интуитивно
+                                понятно.
+                                Когда возникали вопросы, мне отвечали в течение двух минут. Служба поддержки очень
+                                отзывчивая и
+                                понимающая. Сервис на высоте!
+                            </p>
+                            <time class="reviews__time" datetime="2019-05-27">27 мая. 2019</time>
+                        </div>
+                        <div class="reviews__item swiper-slide">
+                            <div class="reviews__head">
+                                <img src="images/slider_img-man.png" class="reviews__img">
+                                <div class="reviews__about">
+                                    <div class="reviews__name">Алексей Кашин</div>
+                                    <div class="reviews__post">YouTube-блогер</div>
+                                </div>
+                                <div class="reviews__rating rating">
+                                    <img class="rating__item" src="images/star.svg" alt="Звездочка">
+                                    <img class="rating__item" src="images/star.svg" alt="Звездочка">
+                                    <img class="rating__item" src="images/star.svg" alt="Звездочка">
+                                    <img class="rating__item" src="images/star.svg" alt="Звездочка">
+                                    <img class="rating__item" src="images/star.svg" alt="Звездочка">
+                                </div>
+                            </div>
+                            <p class="reviews__text">
+                                С Макхоотом работаю около 7 месяцев. Общие впечатления отличные! Сайты летают,
+                                техподдержка
+                                оперативно решает все вопросы. Есть тестовый период целых 93 дня! Это ли не сказка ?!
+                                Особенно
+                                хочу отметить менеджера Ивана Иванова за грамотную помощь в решении вопросов
+                                сотрудничества.
+                                Макхооту спасибо за работу
+                            </p>
+                            <time class="reviews__time" datetime="2019-04-13">13 апр. 2019</time>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="reviews__slider-button-next"></div>
+                <div class="reviews__slider-button-prev"></div>
+            </div>
+        </div>
+    </section>
+    <!-- /section reviews -->
+
+    <!-- section gigt -->
+    <section class="gift">
+        <div class="container">
+            <img class="gift__img" src="images/surprise-icon.png" alt="Подарок">
+            <h3 class="gift__title section-title">Получите месяц в подарок</h3>
+            <p class="gift__text">
+                При переносе сайтов от другого хостинг-провайдера вы получаете месяц хостинга на выбранном вами тарифе в
+                подарок! Акция распространяется на все актуальные тарифы, кроме аренды выделенных серверов
+            </p>
+            <button class="gift__btn">Получить</button>
+        </div>
+    </section>
+    <!-- /section gigt -->
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__icons">
+                    <a class="footer__logo-link logo" href="index.html">
+                        <img src="images/logo.png" alt="Логотип Makxoot" class="footer__logo logo__img">
+                    </a>
+                    <ul class="footer__socials">
+                        <li class="footer__social-item">
+                            <a href="#" class="footer__social-link">
+                                <img src="images/vk-icon.png" alt="Иконка Вконтакте" class="footer__icon">
+                            </a>
+                        </li>
+                        <li class="footer__social-item">
+                            <a href="#" class="footer__social-link">
+                                <img src="images/facebook-icon.png" alt="Иконка Facebook" class="footer__icon">
+                            </a>
+                        </li>
+                        <li class="footer__social-item">
+                            <a href="#" class="footer__social-link">
+                                <img src="images/twitter-icon.png" alt="Иконка Twitter" class="footer__icon">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <nav class="footer__navigation">
+                    <ul class="footer__navigation-list">
+                        <li class="footer__navigation-item">Услуги</li>
+                        <li class="footer__navigation-item"><a class="footer__navigation-link" href="#">Хостинг</a></li>
+                        <li class="footer__navigation-item"><a class="footer__navigation-link" href="#">СMS Хостинг</a>
+                        </li>
+                        <li class="footer__navigation-item"><a class="footer__navigation-link" href="#">Премиум
+                                хостинг</a></li>
+                        <li class="footer__navigation-item"><a class="footer__navigation-link" href="#">VPS Хостинг</a>
+                        </li>
+                        <li class="footer__navigation-item"><a class="footer__navigation-link" href="#">Домены</a></li>
+                        <li class="footer__navigation-item"><a class="footer__navigation-link"
+                                href="#">SSL-сертификаты</a></li>
+                        <li class="footer__navigation-item"><a class="footer__navigation-link" href="#">Лицензии ПО</a>
+                        </li>
+                        <li class="footer__navigation-item"><a class="footer__navigation-link" href="#">Выделенные
+                                сервера</a></li>
+                    </ul>
+                    <ul class="footer__navigation-list">
+                        <li class="footer__navigation-item">Клиентам</li>
+                        <li class="footer__navigation-item"><a class="footer__navigation-link" href="#">Дата-центры</a>
+                        </li>
+                        <li class="footer__navigation-item"><a class="footer__navigation-link" href="#">Акции</a></li>
+                        <li class="footer__navigation-item"><a class="footer__navigation-link" href="#">Документы</a>
+                        </li>
+                        <li class="footer__navigation-item"><a class="footer__navigation-link" href="#">Помощь</a></li>
+                        <li class="footer__navigation-item"><a class="footer__navigation-link" href="#">Партнерская
+                                программа</a></li>
+                    </ul>
+                    <ul class="footer__navigation-list">
+                        <li class="footer__navigation-item">О компании</li>
+                        <li class="footer__navigation-item"><a class="footer__navigation-link" href="#">О компании</a>
+                        </li>
+                        <li class="footer__navigation-item"><a class="footer__navigation-link" href="#">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </footer>
+    <!-- /footer -->
+
+
+
+    <script src="js/libs.js"></script>
+    <script src="js/main.js"></script>
 </body>
+
 </html>

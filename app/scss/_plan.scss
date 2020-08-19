@@ -1,0 +1,115 @@
+.plan {
+
+    padding: 40px 0 100px;
+
+    &__title {
+        margin-bottom: 40px;
+    }
+
+    &__toggler {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+
+    &__toggler-btn {
+        @include font('semibold');
+        color: rgba(#121212, .3);
+        margin-right: 5px;
+        padding: 12px 20px;
+        transition: .3s ease;
+        cursor: pointer;
+    }
+
+    &__toggler-btn--active {
+        color: #30aeec;
+        box-shadow: 0px 0px 35px 0px rgba(0, 0, 0, 0.1);
+    }
+
+    &__items-wrapper {
+        display: none;
+    }
+
+    &__items--active {
+        display: block;
+    }
+
+    &__items {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        border: 1px solid #d0cece;
+    }
+
+    &__box {
+        flex-basis: 25%;
+    }
+
+}
+
+.plan-box {
+    @include font('semibold');
+    font-size: 16px;
+    text-align: center;
+    padding-bottom: 20px;
+    transition: .3s ease;
+
+    &:hover {
+        box-shadow: 0px 0px 47.04px 1.96px rgba(0, 0, 0, 0.1);
+
+        .plan-box__title {
+            color: #ffffff;
+            background-color: #30aeec;
+        }
+
+        .plan-box__name {
+            color: #30aeec;
+        }
+
+        .plan-box__item {
+            &:nth-child(even) {
+                background-color: #f6f6f649;
+            }
+        }
+    }
+
+    &__title {
+        color: #cccccc;
+        margin-bottom: 40px;
+        padding: 20px 5px;
+        transition: .3s ease;
+
+    }
+
+    &__name {
+        @include font('bold');
+        font-size: 30px;
+        margin-bottom: 20px;
+        transition: .3s ease;
+
+    }
+
+    &__item {
+        color: #949494;
+        padding: 15px 5px;
+        transition: .3s ease;
+
+
+        &:nth-child(even) {
+            background-color: #f6f6f6;
+        }
+    }
+
+    &__price {
+        @include font('bold');
+        font-size: 34px;
+        letter-spacing: normal;
+        color: #00c04c;
+        margin-top: 25px;
+    }
+
+    &__value {
+        font-size: 20px;
+        margin-left: 5px;
+    }
+}

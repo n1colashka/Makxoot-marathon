@@ -1,0 +1,33 @@
+.gift {
+    padding: 80px 0 185px;
+    text-align: center;
+
+    &__img {
+    }
+
+    &__title {
+        margin: 40px 30px;
+    }
+
+    &__text {
+        font-size: 15px;
+        line-height: 24px;
+        opacity: .6;
+        margin-bottom: 35px;
+    }
+
+    &__btn {
+        @include font('semibold');
+        font-size: 16px;
+        color: #ffffff;
+        background-image: linear-gradient( -50deg, rgb(14,165,234) 0%, rgb(20,206,251) 100%);
+        padding: 12px 15px;
+        width: 190px;
+        cursor: pointer;
+        transition: .3s ease;
+        &:hover {
+            width: 220px;
+        }
+    }
+}
+

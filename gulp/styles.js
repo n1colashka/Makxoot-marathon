@@ -15,6 +15,8 @@ const rename = require('gulp-rename');
 module.exports = function styles() {
     gulp.src([
         'node_modules/normalize.css/normalize.css',
+        'node_modules/swiper/swiper-bundle.css',
+        'node_modules/owl.carousel/dist/assets/owl.carousel.min.css',
     ])
         .pipe(concat('libs.css'))
         .pipe(cleanCSS({
@@ -23,7 +25,7 @@ module.exports = function styles() {
         .pipe(rename({
             suffix: '.min'
         }))
-        .pipe(gulp.dest('app/css'));
+        .pipe(gulp.dest('dist/css'));
     return gulp.src('app/scss/style.scss')
         .pipe(plumber())
         .pipe(gulpif(!argv.prod, sourcemaps.init()))

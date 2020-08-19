@@ -1,0 +1,46 @@
+.partners {
+    padding: 90px 0 50px;
+    &__title {
+        margin-bottom: 55px;
+    }
+}
+
+.partners-carousel {
+    max-height: 190px;
+    &__list {
+        display: flex;
+        align-items: center;
+    }
+
+    &__item {
+        
+    }
+
+    &__link {
+        display: inline-block;
+        vertical-align: middle;
+        padding: 20px 40px;
+        opacity: .5;
+        transition: .5s ease;
+
+
+        &:hover {
+            box-shadow: 0px 0px 35px 0px rgba(0, 0, 0, 0.1);
+            opacity: 1;
+        }
+    }
+
+    &__img {
+        max-height: 100%;
+    }
+
+    .owl-stage {
+        display: flex;
+        align-items: center;
+    }
+
+    .owl-stage-outer {
+        height: 130px;
+    }
+
+}

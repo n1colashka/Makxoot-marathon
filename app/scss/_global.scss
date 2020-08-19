@@ -1,0 +1,60 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  @include font('regular');
+  font-size: 14px;
+  letter-spacing: .25px;
+}
+
+ul,
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+}
+
+.container {
+  max-width: 1140px;
+  padding: 15px;
+  margin: 0 auto;
+}
+
+.section-title {
+  @include font('bold');
+  font-size: 36px;
+  text-align: center;
+}

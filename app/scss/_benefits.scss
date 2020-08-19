@@ -1,0 +1,33 @@
+.benefits {
+    padding: 100px 0;
+
+    &__title {
+        margin-bottom: 80px;
+    }
+
+    &__items {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__item {
+        padding: 0 40px 10px;
+        flex-basis: 33.33%;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    &__img {}
+
+    &__item-title {
+        @include font('bold');
+        font-size: 18px;
+        margin: 20px 0;
+    }
+
+    &__text {
+        font-size: 13px;
+        opacity: .6;
+    }
+
+}

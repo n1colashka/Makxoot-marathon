@@ -1,0 +1,22 @@
+@mixin font($name) {
+  @if $name == 'regular' {
+    font-family: 'OpenSans-Regular', sans-serif;
+    font-weight: 400;
+  }
+
+  @if $name == 'light' {
+    font-family: 'OpenSans-Light', sans-serif;
+    font-weight: 300;
+  }
+
+  @if $name == 'semibold' {
+    font-family: 'OpenSans-SemiBold', sans-serif;
+    font-weight: 600;
+  }
+
+  @if $name == 'bold' {
+    font-family: 'OpenSans-Bold', sans-serif;
+    font-weight: 700;
+  }
+
+}

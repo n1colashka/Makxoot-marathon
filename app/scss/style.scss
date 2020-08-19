@@ -1,5 +1,11 @@
+@import "vars";
 @import "fonts";
-
-body {
-  font-family: 'Montserrat Black';
-}
+@import "global";
+@import "header";
+@import "partners";
+@import "plan";
+@import "benefits";
+@import "lead";
+@import "reviews";
+@import "gift";
+@import "footer";
