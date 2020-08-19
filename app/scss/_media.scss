@@ -1,0 +1,266 @@
+@media(max-width: 1250px) {
+    .reviews {
+        &__slider-button-next {
+            right: 0;
+        }
+        &__slider-button-prev {
+            left: 0;
+        }
+        &__item {
+            max-width: 400px;
+            height: auto;
+        }
+        &__inner {
+            padding: 0 50px;
+        }
+        
+    }
+}
+
+@media(max-width: 768px) {
+
+    .section-title {
+        font-size: 30px;
+    }
+
+    .header-slider {
+        &__item {
+            flex-direction: column;
+        }
+        &__info {
+            margin-bottom: 50px;
+        }
+    }
+
+    .navigation {
+        &__list {
+            display: none;
+        }
+    }
+    
+    .benefits {
+        &__item {
+            flex-basis: 50%;
+            padding: 0 20px 10px;;
+        }
+    }
+
+    .lead {
+        &__input {
+            max-width: 100%;
+            width: 75%;
+        }
+    }
+
+    .reviews {
+        &__item {
+            max-width: 340px;
+        }
+    }
+
+    
+}
+
+@media(max-width: 700px) {
+    .header {
+        min-height: auto;
+    }
+
+    .header-slider {
+        padding-left: 0;
+        &__item {
+            width: 100%;
+        }
+
+        &__info {
+            max-width: 100%;
+            margin-right: 0;
+        }
+
+        &__img {
+            display: none;
+        }
+
+        &__container {
+            height: 350px;
+        }
+
+        &__title {
+            font-size: 38px;
+        }
+
+        &__text {
+            font-size: 15px;
+            line-height: 20px;
+        }
+    }
+
+    .partners {
+        padding: 30px 0;
+        &__title {
+            margin-bottom: 20px;
+        }
+    }
+
+    .partners-carousel {
+        &__link {
+            padding: 10px;
+            &:hover {
+                box-shadow: 0px 0px 35px 0px rgba(0, 0, 0, 0.1);
+                opacity: 1;
+            }
+        }
+    }
+
+    .plan {
+        &__inner {
+            height: auto;
+        }
+    }
+
+    .plan-box {
+        flex-basis: 50%;
+    }
+
+    .lead {
+
+        &__input {
+            width: 65%;
+        }
+
+        &__select {
+            width: 80px;
+        }
+    }
+
+    .footer {
+
+        &__inner {
+            flex-direction: column;
+        }
+
+        &__icons {
+            text-align: center;
+        }
+
+        &__socials {
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+
+        &__navigation {
+            flex-wrap: wrap;
+        }
+
+        &__navigation-list {
+            margin-right: 10px;
+            margin-bottom: 30px;
+        }
+    }
+}
+
+@media(max-width: 560px) {
+    .benefits {
+        padding: 50px 0;
+    }
+
+    .lead {
+        padding: 50px 0;
+
+        &__input {
+            width: 100%;
+            margin-bottom: 20px;
+            margin-right: 0;
+            padding: 20px;
+        }
+
+        &__select {
+            margin-right: 20px;
+            border: 1px solid #d0cece;
+            height: 60px;
+        }
+    }
+
+    .reviews {
+        &__item {
+            max-width: 300px;
+            padding: 20px;
+        }
+
+        &__head {
+            flex-direction: column;
+        }
+
+        &__rating {
+            margin: 20px auto 0;
+        }
+    }
+
+}
+
+@media(max-width: 450px) {
+    .plan {
+        padding-top: 0;
+
+        &__toggler-btn {
+            font-size: 12px;
+        }
+    }
+
+    .plan-box {
+        flex-basis: 100%;
+        &__title {
+            margin-bottom: 20px;
+        }
+
+        &__name {
+            font-size: 24px;
+        }
+
+        &__item {
+            font-size: 14px;
+        }
+
+        &__price {
+            font-size: 28px;
+        }
+    }
+
+    .section-title {
+        font-size: 26px;
+    }
+
+    .partners-carousel {
+        max-height: 100px;
+        &__link {
+            padding: 10px;
+            &:hover {
+                box-shadow: none;
+            }
+        }
+    }
+
+    .benefits {
+        &__item {
+            flex-basis: 100%;
+        }
+
+        &__item-title {
+            font-size: 16px;
+        }
+    }
+
+    .reviews {
+        &__inner {
+            padding: 0;
+        }
+        .reviews__slider-button-prev,
+        .reviews__slider-button-next {
+            top: -20px;
+        }
+    }
+
+    .gift {
+        padding: 40px 0 85px;
+    }
+}

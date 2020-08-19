@@ -14,6 +14,16 @@
     <!-- header -->
     <header class="header">
         <div class="container">
+            <div class="header__menu menu">
+                <button class="menu__close">&times;</button>
+                <ul class="menu__list">
+                    <li class="menu__item"><a href="#" class="menu__link">Хостинг</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">CMS Хостинг</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">Премиум хостинг</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">VPS Хостинг</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">Домены</a></li>
+                </ul>
+            </div>
             <nav class="header__navigation navigation">
                 <a class="header__logo-link logo" href="index.html">
                     <img src="images/logo.png" alt="Логотип Makxoot" class="header__logo logo__img">
@@ -39,7 +49,8 @@
                                 </p>
                                 <a class="header-slider__btn" href="#">Подробнее</a>
                             </div>
-                            <img class="header-slider__img" src="images/header-slider-1.png" alt="Аренда серверов">
+                            <div class="header-slider__img-wrapper"><img class="header-slider__img"
+                                    src="images/header-slider-1.png" alt="Аренда серверов"></div>
                         </div>
                         <div class="header-slider__item swiper-slide">
                             <div class="header-slider__info">
@@ -50,7 +61,8 @@
                                 </p>
                                 <a class="header-slider__btn" href="#">Подробнее</a>
                             </div>
-                            <img class="header-slider__img" src="images/header-slider-1.png" alt="Аренда серверов">
+                            <div class="header-slider__img-wrapper"><img class="header-slider__img"
+                                    src="images/header-slider-1.png" alt="Аренда серверов"></div>
                         </div>
                         <div class="header-slider__item swiper-slide">
                             <div class="header-slider__info">
@@ -61,7 +73,8 @@
                                 </p>
                                 <a class="header-slider__btn" href="#">Подробнее</a>
                             </div>
-                            <img class="header-slider__img" src="images/header-slider-1.png" alt="Аренда серверов">
+                            <div class="header-slider__img-wrapper"><img class="header-slider__img"
+                                    src="images/header-slider-1.png" alt="Аренда серверов"></div>
                         </div>
                         <div class="header-slider__item swiper-slide">
                             <div class="header-slider__info">
@@ -72,7 +85,8 @@
                                 </p>
                                 <a class="header-slider__btn" href="#">Подробнее</a>
                             </div>
-                            <img class="header-slider__img" src="images/header-slider-1.png" alt="Аренда серверов">
+                            <div class="header-slider__img-wrapper"><img class="header-slider__img"
+                                    src="images/header-slider-1.png" alt="Аренда серверов"></div>
                         </div>
                     </div>
                     <div class="swiper-pagination"></div>
@@ -121,83 +135,85 @@
                 <button class="plan__toggler-btn plan__toggler-btn--active ">Оплата за год</button>
                 <button class="plan__toggler-btn">Оплата за месяц</button>
             </div>
-            <div class="plan__items-wrapper plan__items--active">
-                <div class="plan__items">
-                    <div class="plan__box plan-box">
-                        <div class="plan-box__title">Хостинг</div>
-                        <div class="plan-box__name">Мак-3</div>
-                        <div class="plan-box__item">3 ГБ на SSD</div>
-                        <div class="plan-box__item">1 сайт</div>
-                        <div class="plan-box__item">1 база данных</div>
-                        <div class="plan-box__item">Нагрузка 5%</div>
-                        <div class="plan-box__price">113 <span class="plan-box__value">&#8381;</span></div>
-                    </div>
-                    <div class="plan__box plan-box">
-                        <div class="plan-box__title">CMS-Хостинг</div>
-                        <div class="plan-box__name">Мак-10</div>
-                        <div class="plan-box__item">10 ГБ на SSD</div>
-                        <div class="plan-box__item">5 сайтов</div>
-                        <div class="plan-box__item">5 баз данных</div>
-                        <div class="plan-box__item">Нагрузка 12.5%</div>
-                        <div class="plan-box__price">219<span class="plan-box__value">&#8381;</span></div>
-                    </div>
-                    <div class="plan__box plan-box">
-                        <div class="plan-box__title">Премиум Хостинг</div>
-                        <div class="plan-box__name">Мак-15</div>
-                        <div class="plan-box__item">15 ГБ на SSD</div>
-                        <div class="plan-box__item">15 сайтов</div>
-                        <div class="plan-box__item">15 баз данных</div>
-                        <div class="plan-box__item">Нагрузка 25%</div>
-                        <div class="plan-box__price">349<span class="plan-box__value">&#8381;</span></div>
-                    </div>
-                    <div class="plan__box plan-box">
-                        <div class="plan-box__title">VPS Хостинг</div>
-                        <div class="plan-box__name">Мак-30</div>
-                        <div class="plan-box__item">30 ГБ на SSD</div>
-                        <div class="plan-box__item">40 сайтов</div>
-                        <div class="plan-box__item">40 баз данных</div>
-                        <div class="plan-box__item">Нагрузка 50%</div>
-                        <div class="plan-box__price">615<span class="plan-box__value">&#8381;</span></div>
+            <div class="plan__inner">
+                <div class="plan__items-wrapper plan__items--active">
+                    <div class="plan__items">
+                        <div class="plan__box plan-box">
+                            <div class="plan-box__title">Хостинг</div>
+                            <div class="plan-box__name">Мак-3</div>
+                            <div class="plan-box__item">3 ГБ на SSD</div>
+                            <div class="plan-box__item">1 сайт</div>
+                            <div class="plan-box__item">1 база данных</div>
+                            <div class="plan-box__item">Нагрузка 5%</div>
+                            <div class="plan-box__price">113 <span class="plan-box__value">&#8381;</span></div>
+                        </div>
+                        <div class="plan__box plan-box">
+                            <div class="plan-box__title">CMS-Хостинг</div>
+                            <div class="plan-box__name">Мак-10</div>
+                            <div class="plan-box__item">10 ГБ на SSD</div>
+                            <div class="plan-box__item">5 сайтов</div>
+                            <div class="plan-box__item">5 баз данных</div>
+                            <div class="plan-box__item">Нагрузка 12.5%</div>
+                            <div class="plan-box__price">219<span class="plan-box__value">&#8381;</span></div>
+                        </div>
+                        <div class="plan__box plan-box">
+                            <div class="plan-box__title">Премиум Хостинг</div>
+                            <div class="plan-box__name">Мак-15</div>
+                            <div class="plan-box__item">15 ГБ на SSD</div>
+                            <div class="plan-box__item">15 сайтов</div>
+                            <div class="plan-box__item">15 баз данных</div>
+                            <div class="plan-box__item">Нагрузка 25%</div>
+                            <div class="plan-box__price">349<span class="plan-box__value">&#8381;</span></div>
+                        </div>
+                        <div class="plan__box plan-box">
+                            <div class="plan-box__title">VPS Хостинг</div>
+                            <div class="plan-box__name">Мак-30</div>
+                            <div class="plan-box__item">30 ГБ на SSD</div>
+                            <div class="plan-box__item">40 сайтов</div>
+                            <div class="plan-box__item">40 баз данных</div>
+                            <div class="plan-box__item">Нагрузка 50%</div>
+                            <div class="plan-box__price">615<span class="plan-box__value">&#8381;</span></div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="plan__items-wrapper">
-                <div class="plan__items">
-                    <div class="plan__box plan-box">
-                        <div class="plan-box__title">Хостинг</div>
-                        <div class="plan-box__name">Мак-1</div>
-                        <div class="plan-box__item">2 ГБ на SSD</div>
-                        <div class="plan-box__item">1 сайт</div>
-                        <div class="plan-box__item">1 база данных</div>
-                        <div class="plan-box__item">Нагрузка 5%</div>
-                        <div class="plan-box__price">101 <span class="plan-box__value">&#8381;</span></div>
-                    </div>
-                    <div class="plan__box plan-box">
-                        <div class="plan-box__title">CMS-Хостинг</div>
-                        <div class="plan-box__name">Мак-8</div>
-                        <div class="plan-box__item">11 ГБ на SSD</div>
-                        <div class="plan-box__item">5 сайтов</div>
-                        <div class="plan-box__item">5 баз данных</div>
-                        <div class="plan-box__item">Нагрузка 12.5%</div>
-                        <div class="plan-box__price">219<span class="plan-box__value">&#8381;</span></div>
-                    </div>
-                    <div class="plan__box plan-box">
-                        <div class="plan-box__title">Премиум Хостинг</div>
-                        <div class="plan-box__name">Мак-12</div>
-                        <div class="plan-box__item">17 ГБ на SSD</div>
-                        <div class="plan-box__item">15 сайтов</div>
-                        <div class="plan-box__item">15 баз данных</div>
-                        <div class="plan-box__item">Нагрузка 25%</div>
-                        <div class="plan-box__price">359<span class="plan-box__value">&#8381;</span></div>
-                    </div>
-                    <div class="plan__box plan-box">
-                        <div class="plan-box__title">VPS Хостинг</div>
-                        <div class="plan-box__name">Мак-30</div>
-                        <div class="plan-box__item">32 ГБ на SSD</div>
-                        <div class="plan-box__item">45 сайтов</div>
-                        <div class="plan-box__item">45 баз данных</div>
-                        <div class="plan-box__item">Нагрузка 60%</div>
-                        <div class="plan-box__price">725<span class="plan-box__value">&#8381;</span></div>
+                <div class="plan__items-wrapper">
+                    <div class="plan__items">
+                        <div class="plan__box plan-box">
+                            <div class="plan-box__title">Хостинг</div>
+                            <div class="plan-box__name">Мак-1</div>
+                            <div class="plan-box__item">2 ГБ на SSD</div>
+                            <div class="plan-box__item">1 сайт</div>
+                            <div class="plan-box__item">1 база данных</div>
+                            <div class="plan-box__item">Нагрузка 5%</div>
+                            <div class="plan-box__price">101 <span class="plan-box__value">&#8381;</span></div>
+                        </div>
+                        <div class="plan__box plan-box">
+                            <div class="plan-box__title">CMS-Хостинг</div>
+                            <div class="plan-box__name">Мак-8</div>
+                            <div class="plan-box__item">11 ГБ на SSD</div>
+                            <div class="plan-box__item">5 сайтов</div>
+                            <div class="plan-box__item">5 баз данных</div>
+                            <div class="plan-box__item">Нагрузка 12.5%</div>
+                            <div class="plan-box__price">219<span class="plan-box__value">&#8381;</span></div>
+                        </div>
+                        <div class="plan__box plan-box">
+                            <div class="plan-box__title">Премиум Хостинг</div>
+                            <div class="plan-box__name">Мак-12</div>
+                            <div class="plan-box__item">17 ГБ на SSD</div>
+                            <div class="plan-box__item">15 сайтов</div>
+                            <div class="plan-box__item">15 баз данных</div>
+                            <div class="plan-box__item">Нагрузка 25%</div>
+                            <div class="plan-box__price">359<span class="plan-box__value">&#8381;</span></div>
+                        </div>
+                        <div class="plan__box plan-box">
+                            <div class="plan-box__title">VPS Хостинг</div>
+                            <div class="plan-box__name">Мак-30</div>
+                            <div class="plan-box__item">32 ГБ на SSD</div>
+                            <div class="plan-box__item">45 сайтов</div>
+                            <div class="plan-box__item">45 баз данных</div>
+                            <div class="plan-box__item">Нагрузка 60%</div>
+                            <div class="plan-box__price">725<span class="plan-box__value">&#8381;</span></div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -373,7 +389,7 @@
     </section>
     <!-- /section reviews -->
 
-    <!-- section gigt -->
+    <!-- section gift -->
     <section class="gift">
         <div class="container">
             <img class="gift__img" src="images/surprise-icon.png" alt="Подарок">
@@ -385,7 +401,7 @@
             <button class="gift__btn">Получить</button>
         </div>
     </section>
-    <!-- /section gigt -->
+    <!-- /section gift -->
 
     <!-- footer -->
     <footer class="footer">

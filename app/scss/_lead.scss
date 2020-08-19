@@ -1,6 +1,6 @@
 .lead {
     padding: 100px 0;
-    background: url('../images/lead-bg-left.png') left 20px center no-repeat,
+    background: url('../images/lead-bg-left.png') left 0 center no-repeat,
         url('../images/lead-bg-right.png') right -180px no-repeat;
     background-color: #f5f5f5;
 
@@ -8,8 +8,6 @@
     &__title {
         margin-bottom: 50px;
     }
-
-    &__form {}
 
     &__field {
         text-align: center;

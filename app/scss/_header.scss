@@ -49,7 +49,7 @@
 		position: relative;
 		margin-right: 5px;
 		max-width: 200px;
-		// border-bottom: 1px solid transparent;
+		padding: 5px;
 		&::after {
 			position: absolute;
 			content: "";
@@ -63,8 +63,8 @@
 
 		}
 		&:hover {
-			// border-bottom-color: #fff;
 			&::after {
+				right: 0;
 				transform: scaleX(1);
 			}
 		}
@@ -144,7 +144,61 @@
 		}
 	}
 
-	&__img {
+	&__img-wrapper {
+		position: relative;
 
+		&::after {
+			position: absolute;
+			content: "";
+			width: 100%;
+			height:100%;
+			right: 0;
+			left: 0;
+			z-index: -1;
+			background: url('../images/shadow.png') center no-repeat;
+			background-size: cover;
+			opacity: .8;
+		}
+		
 	}
+}
+
+.menu {
+	position: fixed;
+	right: 0;
+	top: 0;
+	height: 100%;
+	width: 300px;
+	z-index: 999;
+	background-color: rgb(11, 9, 87);
+	padding: 50px;
+	transform: translateX(100%);
+	transition: transform .3s ease;
+
+	&__close {
+		display: block;
+		position: absolute;
+		font-size: 32px;
+		color: #ffffff;
+		right: 10px;
+		top: 10px;
+		cursor: pointer;
+	}
+
+
+	&__list {
+		margin-top: 50px;
+	}
+	
+	&__item {
+		margin-bottom: 20px;
+		font-size: 18px;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
+
+.menu--active {
+	transform: translateX(0);
 }
