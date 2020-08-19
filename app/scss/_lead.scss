@@ -27,6 +27,7 @@
     }
 
     &__select {
+        display: inline-block;
         position: relative;
         @include font('bold');
         font-size: 16px;
@@ -34,12 +35,18 @@
         width: 100px;
         padding: 15px;
         border: none;
+    }
 
+    &__select-wrapper {
+        position: relative;
+        display: inline-block;
         &::before {
             position: absolute;
             content: "";
             left: 0;
-            height: 100%;
+            top: 50%;
+            transform: translateY(-50%);
+            height: 55%;
             width: 1px;
             z-index: 999;
             background-color: #d0cece;

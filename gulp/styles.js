@@ -17,6 +17,8 @@ module.exports = function styles() {
         'node_modules/normalize.css/normalize.css',
         'node_modules/swiper/swiper-bundle.css',
         'node_modules/owl.carousel/dist/assets/owl.carousel.min.css',
+        // 'node_modules/slick-carousel/slick/slick.css',
+        // 'node_modules/slick-carousel/slick/slick-theme.css',
     ])
         .pipe(concat('libs.css'))
         .pipe(cleanCSS({

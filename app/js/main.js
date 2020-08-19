@@ -48,7 +48,7 @@ $(function () {
     });
 
     const reviewsSwiper = new Swiper('.reviews__slider-wrapper', {
-        slidesPerView: 'auto',
+        slidesPerView: 2,
         spaceBetween: 100,
         loop: true,
         navigation: {
@@ -56,18 +56,20 @@ $(function () {
             prevEl: '.reviews__slider-button-prev',
         },
         breakpoints: {
-            
-            768: {
-                slidesPerView: 'auto',
-                spaceBetween: 50,
-                centeredSlides: true,
-            },
             320: {
-                slidesPerView: 'auto',
+                slidesPerView: 1,
                 spaceBetween: 20,
-                centeredSlides: true,
             },
-            
+            768: {
+                slidesPerView: 1,
+                spaceBetween: 30,
+
+            },
+            1024: {
+                slidesPerView: 2,
+                spaceBetween: 50,
+            },
+
         }
     });
 
